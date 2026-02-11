@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: insta_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: instagram
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ../migrations:/migrations:ro
+      - ../seeds:/seeds:ro
+      - ../tests:/tests:ro
+      - ../reports:/reports:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d instagram"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  pgdata:
