@@ -1,15 +1,3 @@
-Ya da bunu GitHub portfolio formatına dönüştürelim
-
-Ya da LinkedIn post taslağı çıkaralım
-
-Hangisine geçiyoruz?
-
-reaadme
-
-Tamam.
-Şimdi sana gerçekten portfolio-level, “sen bu işi biliyorsun” dedirten bir README yazıyorum.
-
-Bunu direkt README.md içine koyabilirsin.
 
 📦 MarketplaceDB
 
