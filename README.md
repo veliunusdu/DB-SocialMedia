@@ -1,12 +1,12 @@
 
-📦 MarketplaceDB
+ MarketplaceDB
 
 A production-grade PostgreSQL backend architecture for a social marketplace platform.
 Designed with strict Row-Level Security (RLS), role isolation, messaging integrity, and trigger-based domain logic.
 
 This project demonstrates advanced database engineering patterns using pure PostgreSQL.
 
-🚀 Project Overview
+ Project Overview
 
 MarketplaceDB is a database-first backend implementation of a social marketplace platform with features similar to:
 
@@ -30,8 +30,8 @@ No ORM magic.
 No framework shortcuts.
 Just solid PostgreSQL engineering.
 
-🧠 Core Features
-🔐 Row-Level Security (RLS)
+ Core Features
+ Row-Level Security (RLS)
 
 Multi-tenant isolation
 
@@ -43,7 +43,7 @@ Admin override support
 
 FORCE ROW LEVEL SECURITY enabled
 
-💬 Direct Messaging Engine
+ Direct Messaging Engine
 
 Direct conversations
 
@@ -55,7 +55,7 @@ Integrity constraints preventing unauthorized inserts
 
 Guardrails against invalid deletion
 
-👥 Social Graph
+ Social Graph
 
 Follow system
 
@@ -65,7 +65,7 @@ Unique constraints for pending requests
 
 Trigger-based notification creation
 
-📰 Feed System
+ Feed System
 
 Privacy-aware feed views
 
@@ -73,7 +73,7 @@ Public/private filtering
 
 Optimized with proper indexing strategy
 
-📊 Analytics & Reporting
+ Analytics & Reporting
 
 Trending queries
 
@@ -81,7 +81,7 @@ Performance explain plans
 
 Structured reporting queries
 
-🏗 Architecture Philosophy
+ Architecture Philosophy
 
 This project follows a database-centric architecture:
 
@@ -95,7 +95,7 @@ Application role is minimal (app_user)
 
 Session identity is managed using custom session variables
 
-🔑 Security Model
+ Security Model
 Roles
 
 postgres → superuser (infrastructure)
@@ -139,7 +139,7 @@ follow_requests_update_target
 
 etc.
 
-📂 Project Structure
+ Project Structure
 marketplaceDB/
 ├─ docker/
 │  ├─ docker-compose.yml
@@ -161,7 +161,7 @@ marketplaceDB/
 ├─ docs/
 └─ scripts/
 
-🐳 How To Run
+ How To Run
 1️⃣ Start Database
 cd docker
 docker compose up -d
@@ -189,7 +189,7 @@ Tests simulate different users by switching session context using:
 
 CALL app.set_current_user(...)
 
-📈 Performance Considerations
+ Performance Considerations
 
 Composite indexes for feed queries
 
